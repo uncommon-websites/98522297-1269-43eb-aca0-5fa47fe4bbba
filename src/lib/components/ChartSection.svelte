@@ -2,101 +2,63 @@
 	<div class="container-custom">
 		<div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
 			<div>
-				<h2 class="text-3xl font-medium mb-2">Highest accuracy at every price point</h2>
-				<p class="text-xl text-muted font-light">State of the art across several benchmarks</p>
+				<h2 class="text-3xl font-medium mb-2">Built for scale and reliability</h2>
+				<p class="text-xl text-muted font-light">Trusted infrastructure powering millions of connections daily</p>
 			</div>
 			<div class="max-w-xs text-[10px] text-muted leading-relaxed border-l border-border pl-4">
-				<strong class="text-foreground block mb-1">About this benchmark</strong>
-				This benchmark consists of 2,500 questions developed by subject matter experts across dozens of subjects (e.g. math, humanities, natural sciences). Each question has a known solution that is unambiguous and easily verifiable, but requires sophisticated web retrieval and reasoning. Results are reported on a sample of 100 questions from this benchmark. Learn more in our <a href="#" class="underline">latest blog</a>.
+				<strong class="text-foreground block mb-1">Global reach</strong>
+				Plaid's infrastructure connects to 12,000+ financial institutions across 20 markets, providing secure access to financial data for over 100 million users. Our platform processes 500,000+ new connections daily while maintaining industry-leading uptime and security standards.
 			</div>
 		</div>
 
-		<div class="relative w-full h-[500px] border border-border bg-primary-50/30 p-8 font-mono text-xs">
-			<!-- Chart Grid -->
-			<div class="absolute inset-0 p-8 grid grid-rows-6 grid-cols-1">
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-			</div>
-			
-			<!-- Y Axis Label -->
-			<div class="absolute left-2 top-1/2 -translate-y-1/2 -rotate-90 text-muted origin-center whitespace-nowrap">
-				ACCURACY (%)
-			</div>
-
-			<!-- X Axis Label -->
-			<div class="absolute bottom-2 left-1/2 -translate-x-1/2 text-muted">
-				COST (CPM)
-			</div>
-
-			<!-- Top Left Legend -->
-			<div class="absolute top-4 left-4 flex gap-4 text-[10px] text-muted">
-				<span class="bg-gray-200 px-1 rounded text-foreground">MMLU-Search</span>
-				<span>BrowseComp Search</span>
-				<span>BrowseComp</span>
-				<span>DeepResearch Bench</span>
-				<span>WISER-Atomic</span>
-			</div>
-
-			<!-- Data Points -->
-			
-			<!-- Parallel (The Winner) -->
-			<div class="absolute top-[15%] left-[15%] flex flex-col items-center group cursor-pointer z-10">
-				<div class="flex items-center gap-2 mb-1">
-					<span class="text-accent font-bold">PARALLEL</span>
+		<div class="relative w-full border border-border bg-primary-50/30 p-12 font-mono">
+			<!-- Metrics Grid -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+				<!-- Metric 1 -->
+				<div class="space-y-4">
+					<div class="text-5xl font-bold text-accent">100M+</div>
+					<div class="text-sm font-medium">Global Users</div>
+					<p class="text-xs text-muted leading-relaxed">
+						Over 100 million users trust Plaid to securely connect their financial accounts to the apps they love.
+					</p>
 				</div>
-				<div class="w-3 h-3 bg-accent rounded-full shadow-[0_0_0_4px_rgba(255,68,0,0.2)]"></div>
-				<div class="mt-1 text-[10px] text-accent">67% / $2CPM</div>
+
+				<!-- Metric 2 -->
+				<div class="space-y-4">
+					<div class="text-5xl font-bold text-accent">12K+</div>
+					<div class="text-sm font-medium">Financial Institutions</div>
+					<p class="text-xs text-muted leading-relaxed">
+						Integrated with 12,000+ banks and financial institutions across 20 markets worldwide.
+					</p>
+				</div>
+
+				<!-- Metric 3 -->
+				<div class="space-y-4">
+					<div class="text-5xl font-bold text-accent">500K+</div>
+					<div class="text-sm font-medium">Daily Connections</div>
+					<p class="text-xs text-muted leading-relaxed">
+						Processing over 500,000 new connections every day, providing real-time financial data access.
+					</p>
+				</div>
 			</div>
 
-			<!-- OpenAI GPT-4 -->
-			<div class="absolute top-[25%] left-[45%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-0 group-hover:opacity-100 transition-opacity">
-					<span class="font-bold">OPENAI GPT-4</span>
+			<!-- Bottom Stats Bar -->
+			<div class="mt-12 pt-8 border-t border-border grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+				<div>
+					<div class="text-2xl font-bold mb-1">20</div>
+					<div class="text-xs text-muted uppercase">Markets</div>
 				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">65% / $15CPM</div>
-			</div>
-
-			<!-- Perplexity -->
-			<div class="absolute top-[55%] left-[35%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">PERPLEXITY</span>
+				<div>
+					<div class="text-2xl font-bold mb-1">99.9%</div>
+					<div class="text-xs text-muted uppercase">Uptime</div>
 				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">30% / $10CPM</div>
-			</div>
-
-			<!-- ERA -->
-			<div class="absolute top-[65%] left-[40%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">ERA</span>
+				<div>
+					<div class="text-2xl font-bold mb-1">2 Years</div>
+					<div class="text-xs text-muted uppercase">Transaction History</div>
 				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">24% / $15CPM</div>
-			</div>
-
-			<!-- TAVILY -->
-			<div class="absolute top-[80%] right-[20%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">TAVILY</span>
-				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">21% / $30CPM</div>
-			</div>
-
-			<!-- Bottom Right Legend -->
-			<div class="absolute bottom-4 right-4 flex items-center gap-4 text-[10px]">
-				<div class="flex items-center gap-1">
-					<div class="w-2 h-2 bg-accent rounded-full"></div>
-					<span class="text-accent font-bold">PARALLEL</span>
-				</div>
-				<div class="flex items-center gap-1">
-					<div class="w-2 h-2 bg-black rounded-full"></div>
-					<span class="text-muted">OTHERS</span>
+				<div>
+					<div class="text-2xl font-bold mb-1">Real-time</div>
+					<div class="text-xs text-muted uppercase">Webhooks</div>
 				</div>
 			</div>
 		</div>

@@ -2,27 +2,27 @@
 	<div class="container-custom">
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			<div class="space-y-2">
-				<h3 class="font-medium text-sm">Highest accuracy</h3>
+				<h3 class="font-medium text-sm">Secure & Compliant</h3>
 				<p class="text-xs text-muted leading-relaxed">
-					Production-ready outputs built on cross-referenced facts, with minimal hallucination.
+					Open Banking and PSD2 compliant. Delivers secure and reliable access to financial data while meeting regulatory requirements.
 				</p>
 			</div>
 			<div class="space-y-2">
-				<h3 class="font-medium text-sm">Predictable costs</h3>
+				<h3 class="font-medium text-sm">Extensive Coverage</h3>
 				<p class="text-xs text-muted leading-relaxed">
-					Flex compute budget based on task complexity. Pay per query, not per token.
+					12K+ financial institutions integrated across 20 markets. Connect to virtually any bank your customers use.
 				</p>
 			</div>
 			<div class="space-y-2">
-				<h3 class="font-medium text-sm">Evidence-based outputs</h3>
+				<h3 class="font-medium text-sm">Developer-First</h3>
 				<p class="text-xs text-muted leading-relaxed">
-					Verifiability and provenance for every atomic output.
+					RESTful API architecture with clear endpoints. Free sandbox testing and comprehensive documentation.
 				</p>
 			</div>
 			<div class="space-y-2">
-				<h3 class="font-medium text-sm">Trusted</h3>
+				<h3 class="font-medium text-sm">Proven at Scale</h3>
 				<p class="text-xs text-muted leading-relaxed">
-					SOC-II Type 2 Certified, trusted by leading startups and enterprises.
+					Trusted by 100M+ users with 500K+ new daily connections providing real-time financial data.
 				</p>
 			</div>
 		</div>
@@ -34,22 +34,22 @@
 		<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
 			<div class="md:col-span-1">
 				<p class="font-mono text-xs text-muted w-3/4">
-					Powering the best AIs using the web
+					Trusted by leading fintech companies
 				</p>
 			</div>
-			<div class="md:col-span-3 flex flex-wrap items-center justify-between gap-8 grayscale opacity-70 hover:opacity-100 transition-opacity">
-				<!-- Logo Placeholders -->
-				<div class="flex items-center gap-2 font-bold text-xl">
-					<div class="w-6 h-6 bg-red-500 rounded-sm"></div>
-					floqer
+			<div class="md:col-span-3 flex flex-wrap items-center justify-between gap-8 opacity-70 hover:opacity-100 transition-opacity">
+				<!-- Customer Logos -->
+				<div class="font-semibold text-lg tracking-tight">
+					Western Union
 				</div>
-				<div class="flex items-center gap-2 font-bold text-xl">
-					<div class="w-6 h-6 bg-blue-500 rounded-full"></div>
-					genpact
+				<div class="font-semibold text-lg tracking-tight">
+					N26
 				</div>
-				<div class="flex items-center gap-2 font-bold text-xl">
-					<div class="w-6 h-6 bg-pink-500 rounded-full border-2 border-black"></div>
-					Gumloop
+				<div class="font-semibold text-lg tracking-tight">
+					Affirm
+				</div>
+				<div class="font-semibold text-lg tracking-tight">
+					Moneybox
 				</div>
 			</div>
 		</div>

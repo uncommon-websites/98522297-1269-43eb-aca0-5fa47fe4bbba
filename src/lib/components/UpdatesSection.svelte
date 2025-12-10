@@ -6,95 +6,91 @@
 			<div class="flex flex-col h-full">
 				<div class="mb-8">
 					<p class="font-mono text-xs text-muted mb-4">Start building</p>
-					<h2 class="text-2xl font-medium mb-4">Towards a programmatic web for AIs</h2>
+					<h2 class="text-2xl font-medium mb-4">Build the future of fintech</h2>
 					<p class="text-muted font-light mb-8 text-sm leading-relaxed max-w-md">
-						Parallel is building new interfaces, infrastructure, and business models for AIs to work with the web
+						Join thousands of developers building innovative financial applications with Plaid's secure API infrastructure
 					</p>
 					<div class="flex gap-3 mb-12">
 						<button class="border border-border px-3 py-1.5 text-xs font-mono uppercase hover:bg-primary-50 transition-colors flex items-center gap-2">
-							TRY IT FOR FREE
-							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">P</span>
+							GET API KEYS
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"/>
+							</svg>
 						</button>
-						<button class="border border-border px-3 py-1.5 text-xs font-mono uppercase hover:bg-primary-50 transition-colors flex items-center gap-2">
-							JOIN US
-							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">J</span>
+						<button class="border border-border px-3 py-1.5 text-xs font-mono uppercase hover:bg-primary-50 transition-colors">
+							VIEW DOCS
 						</button>
 					</div>
 				</div>
 				
-				<!-- Barcode Visual -->
-				<div class="mt-auto w-full h-48 bg-black relative overflow-hidden flex items-center justify-center">
-					{#each Array(100) as _, i}
-						<div 
-							class="h-full bg-white absolute" 
-							style="
-								left: {i}%; 
-								width: {Math.random() * 2}%; 
-								opacity: {Math.random()};
-							"
-						></div>
-					{/each}
-					<div class="absolute inset-0 flex items-center justify-center">
-						<div class="bg-black text-white font-mono text-[10px] px-2 py-1 z-10">
-							parallel.web
-						</div>
+				<!-- API Code Visual -->
+				<div class="mt-auto w-full bg-gray-950 rounded border border-border overflow-hidden">
+					<div class="bg-gray-900 px-4 py-2 border-b border-gray-800 flex items-center gap-2">
+						<div class="w-3 h-3 rounded-full bg-red-500"></div>
+						<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+						<div class="w-3 h-3 rounded-full bg-green-500"></div>
+						<span class="ml-4 text-gray-400 text-[10px] font-mono">plaid_api.js</span>
+					</div>
+					<div class="p-4 font-mono text-[10px] text-green-400 leading-relaxed">
+						<div class="text-gray-500">// Initialize Plaid client</div>
+						<div><span class="text-purple-400">const</span> client = <span class="text-blue-400">new</span> PlaidClient();</div>
+						<div class="mt-2 text-gray-500">// Get account balance</div>
+						<div><span class="text-purple-400">const</span> balance = <span class="text-purple-400">await</span> client.getBalance();</div>
+						<div class="mt-2"><span class="text-blue-400">console</span>.log(balance);</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- Right Column: Updates -->
 			<div>
-				<p class="font-mono text-xs text-muted mb-8">Latest updates</p>
+				<p class="font-mono text-xs text-muted mb-8">Customer success stories</p>
 				
 				<div class="space-y-12">
 					<!-- Update 1 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 20</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">Case Study</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel Extract</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Moneybox: High-speed, low-fee payments</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel Extract converts web pages into LLM-ready markdown format. It operates in two modes: compressed excerpts (dense, semantically relevant content) and full content extraction (complete page content). The API is designed for AI agents and handles challenging web content including JavaScript-rendered sites and complex PDFs, making it useful for tasks like documentation extraction, research paper processing, and financial filing analysis.
+								Moneybox implemented Plaid's Payment Initiation API to enable instant, high-speed, low-fee payment solutions for their customers. The integration allowed them to reduce payment processing costs while improving the user experience with faster transaction times.
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Payments</span>
 						</div>
 					</div>
 
 					<!-- Update 2 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 15</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">Case Study</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel FindAll</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Placid Express: 50% reduction in support queries</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel's new FindAll API turns natural language queries into custom datasets from the web. It finds entities like companies, people, or locations based on your criteria, then enriches them with structured data—all with citations. FindAll Pro achieves 61% recall, 3x better than competitors.
+								By implementing Plaid's Identity product, Placid Express achieved a 50% reduction in customer service queries. The automated identity verification streamlined their onboarding process and significantly reduced friction for new users.
 							</p>
-							<div class="flex gap-2">
-								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
-								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Benchmarks</span>
-							</div>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Identity</span>
 						</div>
 					</div>
 
 					<!-- Update 3 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 13</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">Testimonial</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel Monitor</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Drop: Years of development saved</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel Monitor can be thought of as a web search that's always on: you define a query that kicks off an ongoing stream of updates every time new related information appears on the web.
+								"We could have spent years building a data solution that wouldn't have come close to what Plaid provides." - Daniel Whiffing, Technical Lead at Drop
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Transactions</span>
 						</div>
 					</div>
 
 					<!-- Update 4 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 12</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">Case Study</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Parallel raises $100M Series A to build web infrastructure for agents</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">YouLend: Boosting loan approval rates</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel raises $100M Series A at a 740M valuation.
+								YouLend uses Plaid to boost loan approval rates through better data access. Real-time transaction data enables more accurate underwriting decisions and faster loan approvals for small businesses.
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Fundraise</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Lending</span>
 						</div>
 					</div>
 				</div>
